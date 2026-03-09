@@ -107,8 +107,14 @@ if (!isset($_ENV['SKIP_MYSQL_SSL'])) {
 
 $_SERVER['HTTPS'] = 'on';
 
-define('WP_SITEURL', 'https://serverlesswp-tnllab.vercel.app/');
-define('WP_HOME', 'https://serverlesswp-tnllab.vercel.app/');
+// Inject the true host.
+$headers = getallheaders();
+if (isset($headers['injectHost'])) {
+  $_SERVER['HTTP_HOST'] = $headers['injectHost'];
+}
+
+define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
+define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
 
 // Optional S3 credentials for file storage.
 if (isset($_ENV['S3_KEY_ID']) && isset($_ENV['S3_ACCESS_KEY'])) {

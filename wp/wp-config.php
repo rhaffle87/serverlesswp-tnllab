@@ -66,14 +66,14 @@ else {
  *
  * @since 2.6.0
  */
-define( 'AUTH_KEY',         'put your unique phrase here' );
-define( 'SECURE_AUTH_KEY',  'put your unique phrase here' );
-define( 'LOGGED_IN_KEY',    'put your unique phrase here' );
-define( 'NONCE_KEY',        'put your unique phrase here' );
-define( 'AUTH_SALT',        'put your unique phrase here' );
-define( 'SECURE_AUTH_SALT', 'put your unique phrase here' );
-define( 'LOGGED_IN_SALT',   'put your unique phrase here' );
-define( 'NONCE_SALT',       'put your unique phrase here' );
+define('AUTH_KEY',         ']K4*^eGCk6/`A7iC6@KJUJ2k.]x5ev7IO))}FH Qzz=-G6Ko,tOhpEdf|d7 GjV,');
+define('SECURE_AUTH_KEY',  'P@jA0?)*H*-D4$&aYk--Vp-60^h!I@GbkGFI<V|@|a/=je>UQwy<w+r%<|* 1A`-');
+define('LOGGED_IN_KEY',    '8~9s+8WRenz0K{+qzcN /k*S5b2|wnddC0+N2R+fE+TE[Ir|hsEFoy)5tE,Hh;bf');
+define('NONCE_KEY',        'MMJJ8aiz?}|zK:2+(li>#>x]}P56~f<dby8REqcuaIb+1!1US`^Cif:vR2vD!!T(');
+define('AUTH_SALT',        '-}}LnZB|`P*3J2a!rgw_1)~+N&+w$648vV<o2N~CET-t<XI)}s1BsT6Cz)hOIC5h');
+define('SECURE_AUTH_SALT', 'w[V(v,tYM%[pR{9$*.f(}*p({cXIZ1Z#0Z4Q4!9gT(T_F4pVEm<bq9O&?KDg395<');
+define('LOGGED_IN_SALT',   '?o=btIE(1u3 Coa&Q/,J|:=-;Um>KtH][xMwV@l<oaulnME`zsIIqZe&9zgqKd`2');
+define('NONCE_SALT',       '= A9n<)4M&h+;9>A(*i,%k21(XeJqy7[LB~w$J nD:+oH=Flz|{w(+F:Oq $4{j!');
 
 /**#@-*/
 
@@ -113,8 +113,8 @@ if (isset($headers['injectHost'])) {
   $_SERVER['HTTP_HOST'] = $headers['injectHost'];
 }
 
-define('WP_SITEURL', 'https://' . $_SERVER['HTTP_HOST']);
-define('WP_HOME', 'https://' . $_SERVER['HTTP_HOST']);
+define('WP_SITEURL', 'https://serverlesswp-tnllab.vercel.app/');
+define('WP_HOME', 'https://serverlesswp-tnllab.vercel.app/');
 
 // Optional S3 credentials for file storage.
 if (isset($_ENV['S3_KEY_ID']) && isset($_ENV['S3_ACCESS_KEY'])) {

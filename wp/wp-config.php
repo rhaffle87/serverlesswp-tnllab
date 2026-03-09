@@ -107,12 +107,6 @@ if (!isset($_ENV['SKIP_MYSQL_SSL'])) {
 
 $_SERVER['HTTPS'] = 'on';
 
-// Inject the true host.
-$headers = getallheaders();
-if (isset($headers['injectHost'])) {
-  $_SERVER['HTTP_HOST'] = $headers['injectHost'];
-}
-
 define('WP_SITEURL', 'https://serverlesswp-tnllab.vercel.app/');
 define('WP_HOME', 'https://serverlesswp-tnllab.vercel.app/');
 

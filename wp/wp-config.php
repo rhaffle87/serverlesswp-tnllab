@@ -126,8 +126,8 @@ if (isset($_ENV['S3_KEY_ID']) && isset($_ENV['S3_ACCESS_KEY'])) {
 }
 
 // Disable file modification because the changes won't be persisted.
-define('DISALLOW_FILE_EDIT', true );
-define('DISALLOW_FILE_MODS', true );
+define('DISALLOW_FILE_EDIT', false );
+define('DISALLOW_FILE_MODS', false );
 
 // If using SQLite + S3 instead of MySQL/MariaDB.
 if (isset($_ENV['SQLITE_S3_BUCKET']) || isset($_ENV['SERVERLESSWP_DATA_SECRET'])) {

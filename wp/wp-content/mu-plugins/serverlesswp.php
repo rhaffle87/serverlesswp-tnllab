@@ -30,7 +30,7 @@ function serverlesswp_theme_install_notice() {
 // Register the notice action.
 add_action('admin_notices', 'serverlesswp_theme_install_notice');
 
-// A notice to let people know they can't directly install themes.
+// A notice to let people know they can't directly install plugins.
 function serverlesswp_plugin_install_notice() {
     global $pagenow;
     $pages = ['plugin-install.php', 'plugins.php'];
